@@ -5,14 +5,21 @@
 
 char inputChar()
 {
-    char randomChar = rand()%256;
+    char randomChar = rand() % 256;
     return randomChar;
 }
 
 char *inputString()
 {
-
-    return "";
+    int i;
+    char arr[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    char *randomString = malloc(26 * sizeof(char));
+    for (i = 0; i < sizeof(arr); i++) 
+    {
+        randomString[i] = arr[rand() % sizeof(arr)];
+    }
+    randomString[i] = '\0';
+    return randomString;
 }
 
 void testme()
