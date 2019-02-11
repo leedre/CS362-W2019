@@ -5,13 +5,13 @@
 
 char inputChar()
 {
-    // TODO: rewrite this function
-    return ' ';
+    char randomChar = rand()%256;
+    return randomChar;
 }
 
 char *inputString()
 {
-    // TODO: rewrite this function
+
     return "";
 }
 
